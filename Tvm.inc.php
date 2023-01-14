@@ -30,7 +30,7 @@ echo "\n</table></body></html>";
 
 #tvm_filter {
   width: 100%;
-  font-size: 16px;
+  font-size: 15px;
   padding: 12px 20px 12px 10px;
   border: 1px solid #e9e9e9;
   margin-bottom: 12px;
@@ -40,16 +40,17 @@ echo "\n</table></body></html>";
   border-collapse: collapse;
   width: 100%;
   border: 1px solid #e9e9e9;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 #tvm_table th, #tvm_table td {
   text-align: left;
-  padding: 12px;
+  padding: 8px;
+  border: 1px solid #000000;
 }
 
 #tvm_table tr {
-  border: 1px solid #e9e9e9;
+  border: 1px solid #000000;
 }
 
 #tvm_table tr.header, #tvm_table tr:hover {
