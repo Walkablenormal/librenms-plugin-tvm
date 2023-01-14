@@ -51,16 +51,18 @@ echo "\n</table></body></html>";
   background-color: #f1f1f1;
 }
 
-td:contains("False") {
-    color: red;
-}
-
-td:contains("True") {
-    color: green;
-}
 </style>
 
 <script>
+
+const tableCells = document.querySelectorAll("td");
+
+tableCells.forEach((cell) => {
+    if (cell.textContent === "False") {
+        cell.style.backgroundColor = "red";
+    }
+});
+
 function filterFunction() {
   // Declare variables
   var input, filter, table, tr, td, i, txtValue;
