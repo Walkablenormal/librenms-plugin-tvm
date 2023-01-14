@@ -51,7 +51,7 @@ echo "\n</table></body></html>";
 }
 
 #tvm_table tr {
-  border-bottom: 1px solid #e9e9e9;
+  border: 1px solid #e9e9e9;
 }
 
 #tvm_table tr.header, #tvm_table tr:hover {
