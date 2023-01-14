@@ -101,9 +101,12 @@
             filter = input.value.toUpperCase();
             table = document.getElementById("tvm_table");
             tr = table.getElementsByTagName("tr");
-
+            
+            // Always show the first row of the table
+            tr[0].style.display = "";
+            
             // Loop through all table rows, and hide those who don't match the search query
-            for (i = 0; i < tr.length; i++) {
+            for (i = 1; i < tr.length; i++) {
                 td = tr[i].getElementsByTagName("td")[0];
                 if (td) {
                     txtValue = td.textContent || td.innerText;
