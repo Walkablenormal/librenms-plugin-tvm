@@ -54,7 +54,7 @@ echo "\n</table></body></html>";
 }
 
 #tvm_table tr.header, #tvm_table tr:hover {
-  background-color: #f8f8f8;
+  background-color: #f1f1f1;
 }
 
 </style>
