@@ -48,8 +48,8 @@
     $csv = '/opt/librenms/html/plugins/Data/file.csv';
 
     if (!empty($csv)) {
-        echo "<h2>Welcome to the Task Verification Monitor</h2>";
-        echo "<br></br>";
+        echo "<h2 style='text-align:center;'>Welcome to the Task Verification Monitor</h2>";
+        echo "<br>";
         echo "<input type='text' id='tvm_filter' onkeyup='filterFunction()' placeholder='Search for devices..'>";
         $firstLineFlag = True;
         echo "<table id='tvm_table'>\n\n";
