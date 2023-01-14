@@ -34,12 +34,15 @@
     const tableCells = document.querySelectorAll("td");
     tableCells.forEach((cell) => {
         if (cell.textContent === "False") {
+            // Red with 40% opacity
             cell.style.backgroundColor = "rgba(250, 50, 50, 0.4)";
         }
         if (cell.textContent === "True") {
+            // Green with 40% opacity
             cell.style.backgroundColor = "rgba(50, 205, 50, 0.4)";
         }
         if (cell.textContent === "Unknown") {
+            // Yellow with 40% opacity
             cell.style.backgroundColor = "rgba(250, 250, 51, 0.4)";
         }
     });
