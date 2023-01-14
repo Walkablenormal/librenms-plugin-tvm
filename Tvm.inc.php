@@ -49,6 +49,8 @@
 
     if (!empty($csv)) {
         echo "<h2>Welcome to the Task Verification Monitor</h2>";
+        echo "<br></br>";
+        echo "$user";
         echo "<input type='text' id='tvm_filter' onkeyup='filterFunction()' placeholder='Search for devices..'>";
         $firstLineFlag = True;
         echo "<table id='tvm_table'>\n\n";
