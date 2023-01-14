@@ -29,6 +29,7 @@ echo "\n</table></body></html>";
 }
 
 #tvm_filter {
+  background-image: url('/css/magnifyingGlass.png');
   background-position: 10px 10px;
   background-repeat: no-repeat;
   width: 100%;
