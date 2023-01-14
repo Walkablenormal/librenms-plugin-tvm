@@ -29,7 +29,7 @@ echo "\n</table></body></html>";
 }
 
 #tvm_filter {
-  background-image: url('/CSS/magnifyingGlass.png');
+  background-image: url('/opt/librenms/plugins/Tvm/CSS/magnifyingGlass.png');
   background-position: 10px 10px;
   background-repeat: no-repeat;
   width: 100%;
