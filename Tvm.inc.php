@@ -16,6 +16,42 @@ echo "\n</table></body></html>";
 
 ?>
 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#tvm_filter {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#tvm_table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#tvm_table th, #tvm_table td {
+  text-align: left;
+  padding: 12px;
+}
+
+#tvm_table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#tvm_table tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+
 <script>
 function filterFunction() {
   // Declare variables
