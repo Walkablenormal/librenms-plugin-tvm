@@ -4,8 +4,32 @@
     <style>
         #tvm_filter,#tvm_table{width:100%;border:1px solid #e9e9e9;font-size:15px}*{box-sizing:border-box}#tvm_filter{padding:12px 20px 12px 10px;margin-bottom:12px}#tvm_table{border-collapse:collapse}#tvm_table td,#tvm_table th{text-align:left;padding:8px;border:1px solid #000}#tvm_table tr{border:1px solid #000}#tvm_table tr.header,#tvm_table tr:hover{background-color:#f1f1f1}
     </style>
-    
-    <!-- Javascript for cell colour-coding and cell filtering -->
+    </head>
+    <body>
+        <input type='text' id='tvm_filter' onkeyup='filterFunction()' placeholder='Search for devices..'>
+        
+        <?php
+        $firstLineFlag = True;
+        echo "<table id='tvm_table'>\n\n";
+        $f = fopen("/opt/librenms/html/plugins/Data/file.csv", "r");
+        while (($line = fgetcsv($f)) !== false) {
+            if ($firstLineFlag) {
+                $firstLineFlag = false;        
+                echo "<tr class='header'>";
+            } else {
+                echo "<tr>";
+            }
+            foreach ($line as $cell) {
+                echo "<td>" . htmlspecialchars($cell) . "</td>";
+            }
+            echo "</tr>\n";
+        }
+        fclose($f);
+
+        echo "\n</table>";
+        ?>
+
+            <!-- Javascript for cell colour-coding and cell filtering -->
     <script>
     const tableCells = document.querySelectorAll("td");
     tableCells.forEach((cell) => {
@@ -42,28 +66,5 @@
         }
     }
     </script>
-    
-    </head>
-    <body>
-        <input type='text' id='tvm_filter' onkeyup='filterFunction()' placeholder='Search for devices..'>
-        
-        <?php
-        $firstLineFlag = True;
-        echo "<table id='tvm_table'>\n\n";
-        $f = fopen("/opt/librenms/html/plugins/Data/file.csv", "r");
-        while (($line = fgetcsv($f)) !== false) {
-            if ($firstLineFlag) {
-                $firstLineFlag = false;        
-                echo "<tr class='header'>";
-            } else {
-                echo "<tr>";
-            }
-            foreach ($line as $cell) {
-                echo "<td>" . htmlspecialchars($cell) . "</td>";
-            }
-            echo "</tr>\n";
-        }
-        fclose($f);
-
-        echo "\n</table></body></html>";
-        ?>
+    </body>
+</html>
