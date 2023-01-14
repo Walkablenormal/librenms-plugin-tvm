@@ -33,7 +33,7 @@
 
         echo "\n</table>";
     } else {
-            echo "<h3></h3>";
+            echo "<br></br>";
             echo "<h3 style='text-align:center;'> It seems like you forgot to set the CSV-variable in Tvm.inc.php. </h3>";
             echo "<h3 style='text-align:center;'> The variable should contain the full path to the CSV-file you want to read </h3>";       
         }
