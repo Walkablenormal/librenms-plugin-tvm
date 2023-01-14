@@ -13,12 +13,7 @@
         // SET THE VALUE OF THE VARIABLE TO THE FULL PATH TO THE .CSV-FILE.
         $csv = '';
 
-        if (empty($csv)) {
-            echo "<h3> It seems like you forgot to set the CSV-variable in Tvm.inc.php. </h3>";
-            echo "<h3> The variable should contain the full path to the CSV-file you want to read </h3>";
-            die();
-        }
-        
+        if (!empty($csv)) {
         $firstLineFlag = True;
         echo "<table id='tvm_table'>\n\n";
         $f = fopen($csv, "r");
@@ -37,6 +32,10 @@
         fclose($f);
 
         echo "\n</table>";
+    } else {
+        echo "<h3> It seems like you forgot to set the CSV-variable in Tvm.inc.php. </h3>";
+        echo "<h3> The variable should contain the full path to the CSV-file you want to read </h3>";       
+    }
         ?>
 
             <!-- Javascript for cell colour-coding and cell filtering -->
