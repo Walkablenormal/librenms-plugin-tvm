@@ -40,7 +40,7 @@ echo "\n</table></body></html>";
   border-collapse: collapse;
   width: 100%;
   border: 1px solid #e9e9e9;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 #tvm_table th, #tvm_table td {
