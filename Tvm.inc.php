@@ -47,8 +47,16 @@ echo "\n</table></body></html>";
   border-bottom: 1px solid #ddd;
 }
 
-#tvm_table tr.header, #myTable tr:hover {
+#tvm_table tr.header, #tvm_table tr:hover {
   background-color: #f1f1f1;
+}
+
+td:contains("False") {
+    color: red;
+}
+
+td:contains("True") {
+    color: green;
 }
 </style>
 
