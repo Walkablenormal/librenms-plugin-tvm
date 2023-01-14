@@ -6,7 +6,7 @@
     </style>
     </head>
     <body>
-        <h1>Welcome to the Task Verification Monitor</h1>
+        <h2>Welcome to the Task Verification Monitor</h2>
         <input type='text' id='tvm_filter' onkeyup='filterFunction()' placeholder='Search for devices..'>
         
         <?php
