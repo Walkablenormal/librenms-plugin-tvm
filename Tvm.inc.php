@@ -45,7 +45,7 @@
 
     <?php
     // SET THE VALUE OF THE VARIABLE TO THE FULL PATH TO THE .CSV-FILE.
-    $csv = '';
+    $csv = '/opt/librenms/html/Plugins/Data/file.csv';
 
     if (!empty($csv)) {
         echo "<h2>Welcome to the Task Verification Monitor</h2>";
