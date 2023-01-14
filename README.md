@@ -12,8 +12,9 @@ When a cell contains the word 'True', 'False', or 'Unknown' it will color-code t
 
 ## Deployment
 
-To add this plugin to LibreNMS you need to copy the files to the LibreNMS plugin directory. By default this is '/opt/librenms/app/Plugins/'. The easiest way is to clone the repository by using the following command.
+To add this plugin to LibreNMS you need to copy the files to the LibreNMS plugin directory. Because this uses the 'V1-way' of making a plugin the default folder is /opt/librenms/html/Plugins/. The easiest way to deploy this plugin is to clone the repository and setting the correct permissions by using the following commands.
 
-    sudo -u librenms git clone https://github.com/Walkablenormal/librenms-plugin-tvm.git /opt/librenms/html/Plugins/TVM
+    sudo git clone https://github.com/Walkablenormal/librenms-plugin-tvm.git /opt/librenms/html/Plugins/Tvm
+    sudo chown -r librenms:librenms /opt/librenms/html/Plugins/Tvm
 
 The plugin should appear in the Plugin Admin page of LibreNMS where it can be enabled.
