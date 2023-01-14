@@ -20,3 +20,5 @@ To add this plugin to LibreNMS you need to copy the files to the LibreNMS plugin
     sudo chown -R librenms:librenms /opt/librenms/html/plugins/Tvm
 
 The plugin should appear in the Plugin Admin page of LibreNMS where it can be enabled.
+
+When opening the plugin for the first time it will ask you to set the CSV-variable in Tvm.inc.php. This variable should contain the full path to the CSV-file. The librenms-user should have read-rights on the CSV-file.
