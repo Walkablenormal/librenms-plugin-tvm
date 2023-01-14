@@ -34,14 +34,14 @@ echo "\n</table></body></html>";
   width: 100%;
   font-size: 16px;
   padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
+  border: 1px solid #e9e9e9;
   margin-bottom: 12px;
 }
 
 #tvm_table {
   border-collapse: collapse;
   width: 100%;
-  border: 1px solid #ddd;
+  border: 1px solid #e9e9e9;
   font-size: 18px;
 }
 
@@ -51,11 +51,11 @@ echo "\n</table></body></html>";
 }
 
 #tvm_table tr {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e9e9e9;
 }
 
 #tvm_table tr.header, #tvm_table tr:hover {
-  background-color: #f1f1f1;
+  background-color: #f8f8f8;
 }
 
 </style>
