@@ -8,6 +8,8 @@ This plugin works by fetching a comma-seperated file (.csv) and displaying it as
 
 When a cell contains the word 'True', 'False', or 'Unknown' it will color-code the cell green, red or yellow respectivly. This will give the user a quick overview of the tasks that have been completed.
 
+The first row of the comma-seperated file will be used for the table header.
+
 ![An example of TVM!](/assets/images/Example.PNG "TVM")
 
 ## Deployment

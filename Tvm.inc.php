@@ -10,9 +10,18 @@
         <input type='text' id='tvm_filter' onkeyup='filterFunction()' placeholder='Search for devices..'>
         
         <?php
+        // SET THE VALUE OF THE VARIABLE TO THE FULL PATH TO THE .CSV-FILE.
+        $csv = '';
+
+        if (empty($csv)) {
+            echo "<h3> It seems like you forgot to set the CSV-variable in Tvm.inc.php. </h3>";
+            echo "<h3> The variable should contain the full path to the CSV-file you want to read </h3>";
+            die();
+        }
+        
         $firstLineFlag = True;
         echo "<table id='tvm_table'>\n\n";
-        $f = fopen("/opt/librenms/html/plugins/Data/file.csv", "r");
+        $f = fopen($csv, "r");
         while (($line = fgetcsv($f)) !== false) {
             if ($firstLineFlag) {
                 $firstLineFlag = false;        
