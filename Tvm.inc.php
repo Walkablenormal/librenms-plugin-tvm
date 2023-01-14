@@ -6,14 +6,14 @@
     </style>
     </head>
     <body>
-        <h2>Welcome to the Task Verification Monitor</h2>
-        <input type='text' id='tvm_filter' onkeyup='filterFunction()' placeholder='Search for devices..'>
         
         <?php
         // SET THE VALUE OF THE VARIABLE TO THE FULL PATH TO THE .CSV-FILE.
         $csv = '';
 
         if (!empty($csv)) {
+            echo "<h2>Welcome to the Task Verification Monitor</h2>";
+            echo "<input type='text' id='tvm_filter' onkeyup='filterFunction()' placeholder='Search for devices..'>";
         $firstLineFlag = True;
         echo "<table id='tvm_table'>\n\n";
         $f = fopen($csv, "r");
