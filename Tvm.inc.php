@@ -61,6 +61,9 @@ tableCells.forEach((cell) => {
     if (cell.textContent === "False") {
         cell.style.backgroundColor = "red";
     }
+    if (cell.textContent === "True") {
+        cell.style.backgroundColor = "green";
+    }
 });
 
 function filterFunction() {
