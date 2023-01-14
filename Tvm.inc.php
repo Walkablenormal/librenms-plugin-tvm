@@ -1,15 +1,22 @@
 <?php
+$firstLineFlag = True;
 
 echo "<input type='text' id='tvm_filter' onkeyup='filterFunction()' placeholder='Search for devices..'>";
 
 echo "<html><body><table id='tvm_table'>\n\n";
 $f = fopen("/opt/librenms/html/plugins/Data/file.csv", "r");
 while (($line = fgetcsv($f)) !== false) {
+    if ($firstLineFlag) {
+        $firstLineFlag = false;        
+        echo "<tr class='header'>";
+    } else {
         echo "<tr>";
-        foreach ($line as $cell) {
-                echo "<td>" . htmlspecialchars($cell) . "</td>";
-        }
-        echo "</tr>\n";
+    }
+
+    foreach ($line as $cell) {
+            echo "<td>" . htmlspecialchars($cell) . "</td>";
+    }
+    echo "</tr>\n";
 }
 fclose($f);
 echo "\n</table></body></html>";
