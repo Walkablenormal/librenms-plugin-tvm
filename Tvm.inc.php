@@ -71,6 +71,9 @@ tableCells.forEach((cell) => {
     if (cell.textContent === "True") {
         cell.style.backgroundColor = "rgba(50, 205, 50, 0.4)";
     }
+    if (cell.textContent === "Unknown") {
+        cell.style.backgroundColor = "rgba(250, 250, 51, 0.4)";
+    }
 });
 
 function filterFunction() {
