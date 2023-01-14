@@ -2,11 +2,11 @@
 
 namespace LibreNMS\Plugins;
 
-class TVM
+class Tvm
 {
     public static function menu()
     {
-        echo '<li><a href="plugin/p=TVM">TVM</a></li>';
+        echo '<li><a href="plugin/p=Tvm">Tvm</a></li>';
     }
 
     //end menu()
