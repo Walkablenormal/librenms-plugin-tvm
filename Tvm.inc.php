@@ -59,10 +59,10 @@ const tableCells = document.querySelectorAll("td");
 
 tableCells.forEach((cell) => {
     if (cell.textContent === "False") {
-        cell.style.backgroundColor = "red";
+        cell.style.backgroundColor = "rgba(128,0,0,0.8)";
     }
     if (cell.textContent === "True") {
-        cell.style.backgroundColor = "green";
+        cell.style.backgroundColor = "rgba(0,128,0,0.8";
     }
 });
 
