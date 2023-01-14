@@ -31,7 +31,7 @@ echo "\n</table></body></html>";
 #tvm_filter {
   width: 100%;
   font-size: 16px;
-  padding: 2px 20px 12px 40px;
+  padding: 12px 20px 12px 10px;
   border: 1px solid #e9e9e9;
   margin-bottom: 12px;
 }
